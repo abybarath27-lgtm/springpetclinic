@@ -135,7 +135,7 @@ pipeline {
                     docker rm -f simple-java-maven-app-dev || true
                     docker run -d \
                     --name simple-java-maven-app-dev \
-                    -p 8080:8080 \
+                    -p 8081:8080 \
                     simple-java-maven-app:${params.IMAGE_TAG}
                 """
             }
